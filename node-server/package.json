@@ -1,7 +1,7 @@
 {
-  "name": "Express_GraphQL_Apollo_Mongodb_Server",
+  "name": "node-server",
   "version": "1.0.0",
-  "description": "Backend Server for Next.js GraphQL Express Apollo Boilerplate",
+  "description": "Backend Server for Next.js GraphQL Express Apollo app for SECG app",
   "private": true,
   "main": "dist/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "tslint:fix": "tslint --project tsconfig.json --fix"
   },
   "keywords": [],
-  "author": "Anurag Garg",
+  "author": "Lorien Olive",
   "license": "MIT",
   "husky": {
     "hooks": {
