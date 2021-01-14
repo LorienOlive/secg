@@ -1,6 +1,6 @@
 /**
  * Define middlerware for extracting authToken
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import * as jwt from 'jsonwebtoken';

@@ -1,5 +1,5 @@
 /**
- * Garden Page
+ * Subscription Page
  * @author Lorien Olive
  */
 

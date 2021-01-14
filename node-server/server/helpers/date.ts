@@ -1,6 +1,6 @@
 /**
  * Define nethod for converting date to string
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 const dateToString = (date: Date) => new Date(date).toISOString();

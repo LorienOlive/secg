@@ -1,6 +1,6 @@
 /**
  * Configuration
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 export const SERVER = 'http://localhost:4020/graphql';

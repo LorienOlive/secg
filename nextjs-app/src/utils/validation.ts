@@ -1,6 +1,6 @@
 /**
  * Email Validation
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 const validateEmail = (email: string): boolean => {

@@ -1,6 +1,6 @@
 /**
  * New user added subscription
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import gql from 'graphql-tag';

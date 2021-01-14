@@ -1,6 +1,6 @@
 /**
  * Apollo Client Configuration
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import { ApolloClient } from 'apollo-client';

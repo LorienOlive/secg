@@ -1,6 +1,6 @@
 /**
  * Exporting all resolvers
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import { UserMutation, UserQueries, UserSubscription } from './user';

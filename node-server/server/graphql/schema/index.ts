@@ -1,6 +1,6 @@
 /**
  * Primary file for GraphQL Schema
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import { gql } from 'apollo-server-express';

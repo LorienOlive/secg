@@ -1,6 +1,6 @@
 /**
  * Primary file for extracting proper schema structured objects
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import dateToString from '../../helpers/date';

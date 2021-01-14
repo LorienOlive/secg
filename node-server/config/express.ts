@@ -1,6 +1,6 @@
 /**
  * File containing Express Configuration
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import { ApolloServer } from 'apollo-server-express';

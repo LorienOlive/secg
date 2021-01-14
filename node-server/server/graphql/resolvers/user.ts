@@ -1,6 +1,6 @@
 /**
  * File containing all user queries, mutations and subscriptions
- * @author Anurag Garg <garganurag893@gmail.com>
+ * @author Lorien Olive
  */
 
 import { PubSub } from 'apollo-server';
