@@ -12,13 +12,21 @@ const typeDefs = gql`
     users: [User!]!
     user(userId: ID!): User!
     login(email: String!, password: String!): AuthData!
+    gardens: [Garden!]
+    garden(gardenId: ID!): Garden!
+
   }
   type Mutation {
     createUser(userInput: UserInput): AuthData!
     updateUser(userId: ID!, updateUser: UpdateUser): User!
+    createGarden(gardenInput: GardenInput): Garden!
+    updateGarden(userId: ID!, updateGarden: UpdateGarden): Garden!
   }
   type Subscription {
     userAdded: User
+    userUpdated: User
+    gardenAdded: Garden
+    gardenUpdated: Garden
   }
   type User {
     _id: ID!
@@ -42,6 +50,21 @@ const typeDefs = gql`
     email: String
     name: String
     password: String
+  }
+  type Garden {
+    _id: ID!
+    name: String!
+    street_address: String
+    createdAt: String!
+    updatedAt: String!
+  }
+  input GardenInput {
+    name: String!
+    street_address: String!
+  }
+  input UpdateGarden {
+    name: String
+    street_address: String
   }
 `;
 

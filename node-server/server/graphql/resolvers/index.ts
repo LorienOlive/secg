@@ -3,19 +3,23 @@
  * @author Lorien Olive
  */
 
+import { GardenMutation, GardenQueries, GardenSubscription } from './garden';
 import { UserMutation, UserQueries, UserSubscription } from './user';
 
 const rootResolver = {
   Query: {
-    ...UserQueries
+    ...UserQueries,
+    ...GardenQueries
     // Add other queries here
   },
   Mutation: {
-    ...UserMutation
+    ...UserMutation,
+    ...GardenMutation
     // Add other mutations here
   },
   Subscription: {
-    ...UserSubscription
+    ...UserSubscription,
+    ...GardenSubscription
     // Add other subscriptions here
   }
 };

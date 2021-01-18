@@ -12,6 +12,7 @@ import { transformUser } from './merge';
 const pubsub = new PubSub();
 
 const USER_ADDED = 'USER_ADDED';
+const USER_UPDATED = 'USER_UPDATED';
 
 /**
  * User Queries
@@ -112,6 +113,9 @@ const UserMutation = {
 const UserSubscription = {
   userAdded: {
     subscribe: () => pubsub.asyncIterator([USER_ADDED])
+  },
+  userUpdated: {
+    subscribe: () => pubsub.asyncIterator([USER_UPDATED])
   }
 };
 

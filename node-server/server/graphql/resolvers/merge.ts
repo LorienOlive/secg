@@ -4,6 +4,7 @@
  */
 
 import dateToString from '../../helpers/date';
+import Garden from '../../models/garden';
 import User from '../../models/user';
 
 /**
@@ -25,7 +26,7 @@ const getUser = async (id: string) => {
 };
 
 /**
- * Get user object with schema typing
+ * Transform user object with schema typing
  * @param user
  */
 const transformUser = (user: any) => {
@@ -37,4 +38,37 @@ const transformUser = (user: any) => {
   };
 };
 
-export { getUser, transformUser };
+/**
+ * Get garden object with schema typing
+ * @param id
+ */
+const getGarden = async (id: string) => {
+  try {
+    const garden: any = await Garden.findById(id);
+    return {
+      ...garden._doc,
+      _id: garden.id,
+      createdAt: dateToString(garden._doc.createdAt),
+      updatedAt: dateToString(garden._doc.updatedAt)
+    };
+  } catch (err) {
+    throw err;
+  }
+};
+
+/**
+ * Transform garden object with schema typing
+ * @param garden
+ */
+const transformGarden = (garden: any) => {
+  return {
+    ...garden._doc,
+    _id: garden.id,
+    name: garden.name,
+    streetAddress: garden.street_address,
+    createdAt: dateToString(garden._doc.createdAt),
+    updatedAt: dateToString(garden._doc.updatedAt)
+  };
+};
+
+export { getUser, transformUser, getGarden, transformGarden };

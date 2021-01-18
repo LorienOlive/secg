@@ -21,7 +21,11 @@ const userSchema = new mongoose.Schema(
     },
     password: {
       type: String
-    }
+    },
+    gardens: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Garden'
+    }]
   },
   {
     timestamps: true
