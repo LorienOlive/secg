@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import Footer from '../src/components/Footer';
 import Cookies from 'js-cookie';
 import { Mutation } from '@apollo/react-components';
-import CREATE_USER from '../src/graphql/mutation/createUser';
+import CREATE_USER from '../src/graphql/user/mutation/createUser';
 import { setToken } from '../src/configureClient';
 import { validateEmail } from '../src/utils/validation';
 
@@ -61,7 +61,7 @@ class SignUp extends React.PureComponent<any, SignUpState> {
       <div className="container">
         <h1 className="heading">Sign Up</h1>
         <Mutation mutation={CREATE_USER}>
-          {(createUser, { loading, error }) => (
+          {(createUser, { /* loading, error */ }) => (
             <form
               onSubmit={event => this.handleSubmit(createUser, event)}
               className="signup-form">

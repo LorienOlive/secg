@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import Login from '../src/components/Login';
+import Login from '../src/components/LoginForm';
 import Footer from '../src/components/Footer';
 
 const Home: React.SFC = () => {

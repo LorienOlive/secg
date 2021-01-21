@@ -5,7 +5,7 @@
 
 import React from 'react';
 import List from '../src/components/List';
-import GET_USERS from '../src/graphql/query/user';
+import GET_USERS from '../src/graphql/user/query/user';
 import { withAuthSync } from '../src/utils/auth';
 
 interface User {

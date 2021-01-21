@@ -7,7 +7,7 @@ import React from 'react';
 import Router from 'next/router';
 import { toast } from 'react-toastify';
 import { ApolloConsumer } from 'react-apollo';
-import LOGIN_USER from '../graphql/query/login';
+import LOGIN_USER from '../graphql/user/query/login';
 import { validateEmail } from '../utils/validation';
 import { setToken } from '../configureClient';
 import Cookies from 'js-cookie';

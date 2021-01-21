@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import Footer from '../src/components/Footer';
 import { Mutation } from '@apollo/react-components';
 import { validateEmail } from '../src/utils/validation';
-import UPDATE_USER from '../src/graphql/mutation/updateUser';
+import UPDATE_USER from '../src/graphql/user/mutation/updateUser';
 import { withAuthSync } from '../src/utils/auth';
 
 interface UpdateState {
