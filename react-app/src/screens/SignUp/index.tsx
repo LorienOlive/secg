@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import Footer from '../../components/Footer';
 import Cookies from 'js-cookie';
 import { Mutation } from '@apollo/react-components';
-import CREATE_USER from '../../graphql/mutation/createUser';
+import CREATE_USER from '../../graphql/user/mutation/createUser';
 import { setToken } from '../../configureClient';
 import { validateEmail } from '../../utils/validation';
 import './styles.scss';

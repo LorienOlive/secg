@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import Footer from '../../components/Footer';
 import { Mutation } from '@apollo/react-components';
 import { validateEmail } from '../../utils/validation';
-import UPDATE_USER from '../../graphql/mutation/updateUser';
+import UPDATE_USER from '../../graphql/user/mutation/updateUser';
 import './styles.scss';
 
 interface UpdateState {

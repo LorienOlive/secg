@@ -12,6 +12,10 @@ const USER_ADDED = gql`
       _id
       email
     }
+    userUpdated {
+      name
+      email
+    }
   }
 `;
 

@@ -6,7 +6,7 @@
 import React from 'react';
 import List from '../../components/List';
 import { useQuery } from '@apollo/react-hooks';
-import GET_USERS from '../../graphql/query/user';
+import GET_USERS from '../../graphql/user/query/user';
 import './styles.scss';
 
 const Users = () => {

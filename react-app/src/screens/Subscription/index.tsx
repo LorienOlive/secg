@@ -6,7 +6,7 @@
 import React from 'react';
 import { useSubscription } from '@apollo/react-hooks';
 import { UserCard } from '../../components/Card';
-import USER_ADDED from '../../graphql/subscription/users';
+import USER_ADDED from '../../graphql/user/subscription/users';
 import './styles.scss';
 
 const Subscription = () => {
